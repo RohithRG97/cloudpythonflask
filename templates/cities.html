@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+    <body>
+        <h1>Rohith Reddy Gurram</h1>
+        <h1>ID: 1001959477</h1>
+        
+        <p>Cities(min population) within the range </p>
+        <table border = 1>
+            <tr>
+                <td> City </td>
+                <td> Population </td>
+            </tr>
+            {% for x in citiesmin %}
+            <tr>
+                <td> {{x[0]}}</td>
+                <td> {{x[1]}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <br>
+        <br>
+        <p>Cities(max population) within the range </p>
+        <table border = 2>
+            <tr>
+                <td> City </td>
+                <td> Population </td>
+            </tr>
+            {% for y in citiesmax %}
+            <tr>
+                <td> {{y[0]}}</td>
+                <td> {{y[1]}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    
+    </body>
+</html>
