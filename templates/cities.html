@@ -16,11 +16,13 @@
             <tr>
                 <td> City </td>
                 <td> Population </td>
+                <td> State </td>
             </tr>
             {% for x in citiesmin %}
             <tr>
                 <td> {{x[0]}}</td>
                 <td> {{x[1]}}</td>
+                <td> {{x[2]}}</td>
             </tr>
             {% endfor %}
         </table>
@@ -31,11 +33,13 @@
             <tr>
                 <td> City </td>
                 <td> Population </td>
+                <td> State </td>
             </tr>
             {% for y in citiesmax %}
             <tr>
                 <td> {{y[0]}}</td>
                 <td> {{y[1]}}</td>
+                <td> {{y[2]}}</td>
             </tr>
             {% endfor %}
         </table>

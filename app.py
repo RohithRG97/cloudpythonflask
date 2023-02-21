@@ -19,11 +19,11 @@ def gfg():
         n_value = request.form.get("nval")
         
         cur = conn.cursor()
-        sql1 = "select top "+n_value+" city, population from dbo.quiz2 where population >=" + pop_range1 +" AND POPULATION <= "+ pop_range2 + "ORDER BY POPULATION"
+        sql1 = "select top "+n_value+" city, population, state from dbo.quiz2 where population >=" + pop_range1 +" AND POPULATION <= "+ pop_range2 + "ORDER BY POPULATION"
         cur.execute(sql1)
         data = cur.fetchall()
 
-        sql2 = "select top "+n_value+" city, population from dbo.quiz2 where population >=" + pop_range1 +" AND POPULATION <= "+ pop_range2 + "ORDER BY POPULATION DESC"
+        sql2 = "select top "+n_value+" city, population, state from dbo.quiz2 where population >=" + pop_range1 +" AND POPULATION <= "+ pop_range2 + "ORDER BY POPULATION DESC"
         cur.execute(sql2)
         data2 = cur.fetchall()
         
